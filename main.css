@@ -181,9 +181,10 @@ margin-bottom: 246px;
   font-weight: 400;
   color: #666666;
   vertical-align: top;
-  width: 272px;
-  margin-right: 28px;
+  width: 120px;
+  margin-right: 50px;
   margin-bottom: 25.5px;
+  display: inline-block;
 }
 
 .offers__calendar{
@@ -319,6 +320,7 @@ width: 785px;
 height: 455px;
 margin-left: 354px;
 margin-top: -405px;
+padding: 100px 60px;
 }
 
 .about__title{
