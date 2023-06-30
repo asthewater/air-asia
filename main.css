@@ -104,13 +104,9 @@ p{
   font-size: 26px;
   text-align: right;
 }
+
 .contacts__phone{
   text-decoration: none;
-}
-
-.contacts__dropdown-title{
-  font-size: 13px;
-  text-decoration: underline;
 }
 
 .contacts__desc{
@@ -119,24 +115,32 @@ p{
   font-weight: 400;
 }
 
+.dropdown__title{
+  font-size: 13px;
+  text-decoration: underline;
+}
+
 .dropdown{
   position: relative;
 }
 
-.dropdown:hover .dropdowm__menu{
-  display: block;
-
+.dropdown:hover .dropdown__menu{
+  right: 0px;
+  opacity: 1;
 }
 
 .dropdown__menu{
   position: absolute;
-  background: url(dropdown.png) center right no-repeat;
+  background: url(dropdown.png) no-repeat;
   padding: 22px;
   width: 160px;
   height: 80px;
   top: 100%;
+  opacity: 0;
+  transition: opacity .4s;
+  right: -9999px ;
   /* display: none; */
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .dropdowm__menu:before{
